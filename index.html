@@ -1,0 +1,197 @@
+<head>
+    <style>
+        /*取消行距*/
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        /*主标题*/
+        .main-title
+        {
+            text-align: center; /* 水平居中 */
+            font-size: 3rem; /* 使用相对单位，响应式更好 */
+            font-weight: normal;
+            color: hsl(0, 0%, 0%);
+            font-family:system-ui;
+            font-weight: 500;
+        }
+        /*副标题*/
+        .subtitle
+        {
+            text-align: center;
+            font-weight: normal;
+            font-size: 1.5rem; /* 使用相对单位，响应式更好 */
+            color: hsl(96, 100%, 27%);
+            font-weight: 500;
+        }
+        /*配置介绍框圆角矩形*/
+        .bordered-round
+        {
+            max-width: 1000px;
+            min-width: 600px;
+            height: 180px;
+            width: 80%;
+            background-color: hwb(0 0% 100% / 0.5);
+
+
+            border-radius: 10px; /* 圆角半径 */
+            margin-bottom: 2px;
+
+            margin: 0 auto;
+        }
+
+        .text-indiv
+        {
+            max-width: 1000px;
+            min-width: 600px;
+            height: 200px;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .maintext-title
+        {
+            text-align: center;
+        }
+        /*彩色字*/
+        .animate-color
+        {
+            animation: colorChange 8s infinite;
+            display: inline-block;
+        }
+        /*单行字*/
+        .normal-oneline-text
+        {
+            display: inline-block;
+            line-height: 0;
+        }
+        /*没啥用的div*/
+        .onelinetext
+        {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+            margin-right: 10px;
+        }
+        /*空白填充块*/
+        .white-block
+        {
+            height: 20px;
+            width: auto;
+        }
+        /*彩色字闪烁*/
+        @keyframes colorChange
+        {
+            0% { color: #ffa1a1; }
+            100% { color: #afffaf; }
+        }
+        /*彩色字渐变*/
+        @keyframes gradientShift
+        {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        /*彩色字2*/
+        .color-text
+        {
+                background-size: 200% 200%;
+                background-image: linear-gradient(
+                    to right, 
+                    #ffffff, 
+                    #888888, 
+                    #000000, 
+                );
+                animation: gradientShift 8s ease infinite;
+        }
+        /*彩色字标题*/
+        .color-text-title
+        {
+                background-size: 200% 200%;
+                background-image: linear-gradient(
+                    to right, 
+                    #ffffff, 
+                    #000000,
+                    #ffffff
+                );
+                animation: gradientShift 8s infinite;
+        }
+        /*背景*/
+        body
+        {
+            background-image: url("https://picsum.photos/1920/1080");
+            
+            /* 图片不重复 */
+            background-repeat: no-repeat;
+            
+            /* 图片覆盖整个页面 */
+            background-size: cover;
+            
+            /* 图片固定不动 */
+            background-attachment: fixed;
+            
+            /* 图片居中显示 */
+            background-position: center;
+            
+            /* 设置文本颜色以提高可读性 */
+            color: white;
+            font-family: Arial, sans-serif;        }
+    </style>
+</head>
+<body>
+    <!-- 大标题 -->
+    <div>
+        <div class="color-text-title" style="width: auto;height: 20px;"></div>
+        <h1 class="color-text-title" style="text-align:center;font-size:3rem;color:#ffffff;font-family:Arial, Helvetica, sans-serif;">BigTurtle Server</h1>
+        <div class="color-text-title" style="width: auto;height: 20px;"></div>
+        <h1 class="subtitle">A potato server</h1>
+        <div style="height: 20px"></div>
+    </div>
+
+    <div class="bordered-round">
+        <div class="text-indiv">
+            <!-- 小标题 -->
+            <div style="height: 20px"></div>
+            <h3 class="maintext-title">
+                这是一个由土豆组成的Minecraft服务器
+            </h3>
+            <!-- 内容介绍 -->
+
+            <div class="white-block"></div>
+            <div class="white-block"></div>
+
+            <div class="onelinetext" style="text-align: center;">
+                <a class="normal-oneline-text">本服务器由
+                    <h3 class="font-display gradient-animated text-gradient animate-color" style="display: inline-block">
+                        极其强悍的 i5 12400F CPU
+                    </h3>打造
+                </a>
+                    <p class="normal-oneline-text">
+                        性能如同💩💩💩
+                    </p>
+                    <p>
+                        <p class="normal-oneline-text">
+                            不动时MSPT近
+                            <a class="font-display gradient-animated text-gradient animate-color" style="display: inline-block">
+                                30.0
+                            </a>
+                            动一动
+                            <h3 class="font-display gradient-animated text-gradient animate-color" style="display: inline-block">
+                                直接掉刻
+                            </h3>
+                        </p>
+                    </p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="height: 20;width: auto;"></div>
+
+    <div class="bordered-round" style="height: 1000px;">
+        <div style="width: auto;text-align: center;">
+            <h3>加入我们</h3>
+        </div>
+    </div>
+</body>
