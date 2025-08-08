@@ -57,7 +57,7 @@
         /*彩色字*/
         .animate-color
         {
-            animation: colorChange 8 infinite;
+            animation: colorChange 8s infinite;
             display: inline-block;
         }
         /*单行字*/
@@ -112,16 +112,16 @@
                 background-size: 200% 200%;
                 background-image: linear-gradient(
                     to right, 
-                    #ffffff, 
-                    #000000,
-                    #ffffff
+                    #ff6e6e, 
+                    #ff7f7f,
+                    #ffb428
                 );
                 animation: gradientShift 8 infinite;
         }
         /*背景*/
         body
         {
-            background-image: url(/BigTurtleServer/picture/pexels-lastly-772803.webp);
+            background-image: url("https://raw.githubusercontent.com/paimon-git/BigTurtleServer/main/picture/backgrond.webp");
             
             /* 图片不重复 */
             background-repeat: no-repeat;
@@ -163,7 +163,7 @@
             <div class="white-block"></div>
 
             <div class="onelinetext" style="text-align: center;">
-                <a class="normal-oneline-text">本服务器由
+                <a class="normal-oneline-text">本土豆由
                     <h3 class="font-display gradient-animated text-gradient animate-color" style="display: inline-block">
                         极其强悍的 i5 12400F CPU
                     </h3>打造
@@ -188,11 +188,79 @@
     </div>
     
     <div style="height: 20;width: auto;"></div>
+    <div class="bordered-round" style="height: 700;">
+        <div class="white-block" style="height: 40;"> </div>
 
-    <div class="bordered-round" style="height: 1000px;">
-        <div style="width: auto;text-align: center;">
-            <h3>加入我们</h3>
+        <div class="text-indiv">
+            <div style="width: auto;height: 50;text-align: center;">
+                <h3>
+                    服务器介绍
+                </h3>
+            </div>
+            <p>
+                此服务器为Minecraft原版生存服务器,是一个由一群小学生东拼西凑出来的的服务器
+            </p>
+
+            <p>
+                <br>服务器用的RadminLan的私人网络进行连接，无需正版账号，也没有登陆验证，
+            </p>
+            
+            <p class="onelinetext">
+                网络为 大乌龟服务器<br>密码是 bigturtleserver
+            </p>
+
+            <p>
+                <br>↓服务器采用了Minecraft1.21 fabric + carpet mod的服务端,推荐下载这个整合包
+            </p>
+            
+
+            <a class="onelinetext " style="color: aqua;" href="https://cdn.modrinth.com/data/BzV0dvs7/versions/g6D3ZvYP/Redstone%20Optimization%201.21_v2_Beta.mrpack">Redstone Optimized 紅石優化整合包</a>
+            <p>
+                <br>什么？你说你还不会启动MC？看看这个视频吧↓
+            </p>
+            <a style="color: aqua;" href="https://www.bilibili.com/video/BV1og41137kf/?share_source=copy_web&vd_source=a4632bc522e1fee6f78dae51e9d29fd2">保姆级教程！6分钟学会安装MC/分辨各种版本，拒当伸手党！【我的世界】</a>
+            <p>
+                <br>什么？你说你不知道哪里能找到适合自己的生电机器？↓
+            </p>
+            <a style="color: aqua;" href="https://redenmc.com/">RedenMC.com</a>
+            <p>
+                <br>服务器内允许生电，但是由于腐竹实在是没钱，CPU上的很拉，所以很多机器跑起来都会掉刻
+            </p>
+            <p>
+                <br>最后就是有一个事要说，那就是
+            </p>
+            <h1 style="font-size: 7rem;">不要崩服!!!</h1>
         </div>
     </div>
+    <div style="height: 20;width: auto;"></div>
 
+    <div class="bordered-round mx-auto" style="height: 400;text-align: center;margin: 0 auto;">
+
+        <div style="width: auto;text-align: center;height: auto;"></div>
+            <div class="white-block" style="height: 50;"></div>
+            <h3>加入我们</h3>
+            <!--  this  -->
+        <div style="height: 50;"></div>
+        
+        <div style="width: 100%; overflow: hidden;">
+            <!-- 增加一层容器确保flex布局生效 -->
+            <div class="flex" style="display: flex !important; width: 95%; margin: 0 auto; justify-content: center; gap: 25px; flex-direction: row !important;">
+                <!-- QQ部分 -->
+                <div style="text-align: center; width: 200px; height: 250px; flex: none;">
+                    <h4 style="height: 24px; width: 200px; margin: 0 auto;">QQ 142697031</h4>
+                    <img src="https://raw.githubusercontent.com/paimon-git/BigTurtleServer/main/picture/qq.webp" 
+                        alt="QQ二维码" 
+                        style="width: 200px; height: 200px; display: block;">
+                </div>
+                
+                <!-- 微信赞助部分 -->
+                <div style="width: 200px; height: 250px; flex: none;">
+                    <h4 style="width: 200px; text-align: center; margin: 0 auto;">赞助服务器</h4>
+                    <img src="https://raw.githubusercontent.com/paimon-git/BigTurtleServer/main/picture/we chat.webp" 
+                        alt="微信二维码" 
+                        style="width: 200px; height: 200px; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
